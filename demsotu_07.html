@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_dem_so_tu</title>
+</head>
+<body>
+
+</body>
+<script>
+    var num=window.prompt(); //nhập mảng
+    var str = num.toString();
+    var count = 1;
+    for(var x=0; x<str.length; x++)
+    {
+        if(str[x] == ' ') {
+            count++;
+        }
+        if (str[x] == ' ' && str[x+1] == ' '){
+            count--;
+        }
+    }
+    document.write(str);
+    document.write('<br>');
+    document.write(count);
+</script>
+</html>

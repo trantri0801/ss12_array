@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_Thaydoiphantu</title>
+</head>
+<body>
+
+</body>
+<script>
+    var array = window.prompt(); //nhập mảng
+    var str = array.toString(); //chuyển qua string
+    var result = [];
+    for (var x = 0; x <= str.length; x++) {
+        if (str[x] === '-'){
+            result.push('_');
+        } else {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</html>

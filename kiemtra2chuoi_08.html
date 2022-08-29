@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_kiemtra2chuoi</title>
+</head>
+<body>
+
+</body>
+<script>
+    var array1 = window.prompt();
+    var array2 = window.prompt();
+    var str1 = array1.toString();
+    var str2 = array2.toString();
+    if (str1.length !== str2.length){
+        alert('Hai mảng không giống nhau');
+    } else {
+        for (var x = 0; x <= str1.length; x++) {
+            if (str1[x] != str2[x]){
+                alert('Hai mảng không giống nhau');
+            }
+        }
+        alert("Hải mảng giống nhau");
+    }
+</script>
+</html>
