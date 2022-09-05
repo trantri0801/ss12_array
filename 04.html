@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    do {
+        var so = prompt("Nhập vào số phần tử của mảng");
+    } while (isNaN(so) || so === "");
+    var array = [];
+    for (var i = 0; i < so; i++ ){
+        do {
+            var dem = prompt("Nhập vào phần tử của mảng");
+        } while (isNaN(dem) || dem === "");
+        array.push(dem)
+    }
+    array.reverse().join();
+    document.write(array.join(''));
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dem so nguyen am</title>
+</head>
+<body>
+
+</body>
+<script>
+    let chuoi = 'Xin Chao Da Nang';
+    let nguyen = 0; let phu = 0;
+    chuoi = chuoi.toLowerCase();
+    for( let i = 0 ; i < chuoi.length; i++){
+        let ch = chuoi.charAt(i)
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            nguyen++;
+        else if ((ch >= 'a' && ch <= 'z'))
+            phu++;
+    }
+    document.write(nguyen);
+    document.write('<br>' + phu);
+    // for(int i = 0; i < str.length(); i++)
+    // {
+    //     char
+    //     ch = str.charAt(i);
+    //     if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+    //         vcount++;
+    //     } else if ((ch >= 'a' && ch <= 'z')) {
+    //         ccount++;
+    //     }
+    // }
+</script>
+</html>

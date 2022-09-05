@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var array = [];
+    for (var i = 0; i < 10; i++ ){
+        do {
+            var dem = prompt("Nhập vào phần tử thứ " + (i+1)+" của mảng");
+        } while (isNaN(dem) || dem === "");
+        array.push(dem)
+    }
+    let V = prompt('Nhập vào phần tử cần kiểm tra trong mảng');
+    let count = 0;
+    let y;
+    for (let x = 0; x <= array.length; x++){
+        if (V === array[x]){
+            count++;
+            y = x;
+        }
+    }
+    if (count > 0){
+        array.splice(y,1);
+        alert('V is in the array');
+        alert(array);
+    } else alert('V is not in the array');
+</script>
+</html>

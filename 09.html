@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arraya = [];
+    for (let a = 0; a < 10; a++ ){
+        do {
+            var dema = prompt("Nhập vào phần tử thứ " + (a+1)+" của mảng");
+        } while (isNaN(dema) || dema === "");
+        arraya.push(dema)
+    }
+    let arrayb = [];
+    for (let b = 0; b < 10; b++ ){
+        do {
+            var demb = prompt("Nhập vào phần tử thứ " + (b+1)+" của mảng");
+        } while (isNaN(demb) || demb === "");
+        arrayb.push(demb)
+    }
+    let arrayc = [];
+    let result = arrayc.concat(arraya,arrayb)
+    alert(result);
+</script>
+</htmla

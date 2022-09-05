@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_hienthiphantulonnhat</title>
+</head>
+<body>
+
+</body>
+<script>
+    let num = [12,5,66,8,90,45,6,7,33,18];
+    var max = 1;
+    for(var x=1; x<num.length; x++)
+    {
+        if(num[x] > max) {
+            max = num[x];
+        }
+    }
+    document.write('Vị trí của phần tử lớn nhất ' + num.indexOf(max));
+    document.write('<br>');
+    document.write('Giá trị của phần tử lớn nhất '+ max);
+</script>
+</html>

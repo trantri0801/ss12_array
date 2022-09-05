@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_mảng01_03</title>
+</head>
+<body>
+
+</body>
+<script>
+    var array = [];
+    for (var i = 0; i < 3; i++ ){
+        do {
+            var dem = prompt("Nhập vào phần tử của mảng");
+        } while (isNaN(dem) || dem === "");
+        array.push(dem)
+    }
+    let so = prompt('Nhập vào phần tử cần kiểm tra trong mảng');
+    let count = 0;
+    for (let x = 0; x <= array.length; x++){
+        if (so === array[x]){
+            count++;
+        }
+    }
+    if (count > 0){
+        alert('V is in the array');
+    } else
+        alert('V is not in the array');
+</script>
+</html>
